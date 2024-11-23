@@ -1,0 +1,12 @@
+Explanation:
+
+    Function Definitions:
+        Each function prints a "starting" message, sleeps for 2 seconds, and then prints an "exiting" message.
+
+    Threads Creation:
+        Three threads (t1, t2, t3) are created to execute function_A, function_B, and function_C concurrently.
+        Each thread is named for clarity.
+
+    Thread Execution:
+        Each thread is started using .start() which triggers the execution of its target function.
+        t1.join(), t2.join(), and t3.join() ensure the main thread waits for all threads to finish before terminating.

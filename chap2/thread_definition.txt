@@ -1,0 +1,12 @@
+Explanation:
+
+    Function Definition (my_func):
+        The my_func function takes a thread_number as an argument and prints a message indicating which thread called the function.
+
+    Thread Creation and Execution:
+        Inside the main() function, a loop runs 10 times, creating a new thread (t) for each iteration, passing the loop index (i) as an argument to my_func.
+        The start() method starts each thread, and the join() method ensures that the main thread waits for the current thread to finish before starting the next one.
+
+    Thread Behavior:
+        start(): This initiates the execution of the thread.
+        join(): This blocks the execution of the main thread until the current thread completes.

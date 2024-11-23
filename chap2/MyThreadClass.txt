@@ -1,0 +1,13 @@
+This program demonstrates multithreading in Python using the Thread class, where each thread performs a task and simulates a sleep duration.
+Key Components:
+
+    MyThreadClass:
+        Inherits from Thread.
+        The run() method is overridden to print the thread's start message, simulate work using time.sleep(), and print the end message.
+        Each thread is given a random duration (between 1 and 10 seconds) for its sleep time.
+
+    Main Function:
+        Creates 9 threads, each with a unique name and random sleep duration.
+        Starts all threads using start().
+        Waits for all threads to finish using join().
+        Prints the total execution time.

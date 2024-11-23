@@ -1,0 +1,9 @@
+This program solves the Producer-Consumer problem using multiprocessing:
+
+    Queue: Shared between processes for data transfer.
+    Producer: Adds 5 items (0 to 4) to the queue and logs them.
+    Consumer: Retrieves and logs items from the queue until empty.
+    Processes:
+        p1: Runs the producer.
+        p2: Runs the consumer.
+    Flow: Both processes run concurrently, and the program waits for their completion.

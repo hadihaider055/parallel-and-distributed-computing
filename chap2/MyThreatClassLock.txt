@@ -1,0 +1,7 @@
+
+This program uses threading with a Lock to ensure synchronized access to a critical section.
+Key Components:
+
+    Lock: Ensures only one thread can print and sleep at a time by using acquire() and release().
+    MyThreadClass: Threads execute a task (printing and sleeping), acquiring the lock before and releasing it after.
+    Main Function: Creates 9 threads with random durations, starts them, waits for completion, and calculates execution time.

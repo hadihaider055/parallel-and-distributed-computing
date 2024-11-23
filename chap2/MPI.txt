@@ -1,0 +1,11 @@
+This program demonstrates message passing using mpi4py:
+
+    Setup:
+        rank: Process ID.
+        size: Total number of processes.
+
+    Logic:
+        Requires at least 2 processes.
+        Process 0 sends a dictionary to Process 1.
+        Process 1 receives and prints the dictionary.
+        Other processes remain idle.

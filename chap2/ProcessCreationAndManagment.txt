@@ -1,0 +1,13 @@
+Explanation:
+
+    Function Definitions:
+        print_square(num): Prints the square of a given number.
+        print_cube(num): Prints the cube of a given number.
+
+    Process Creation:
+        Two processes (p1 and p2) are created to execute print_square and print_cube functions respectively, with 10 as the argument.
+
+    Process Execution:
+        p1.start() and p2.start() initiate the execution of both processes in parallel.
+        p1.join() and p2.join() ensure that the main process waits for both p1 and p2 to complete before printing "Processes finished executing".
+
