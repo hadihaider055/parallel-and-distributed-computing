@@ -4,7 +4,7 @@ from time import ctime, sleep
 
 num_runners = 3
 finish_line = Barrier(num_runners)
-runners = ['Huey', 'Dewey', 'Louie']
+runners = ['kinza', 'alwaz', 'saad']
 
 def runner():
     name = runners.pop()
