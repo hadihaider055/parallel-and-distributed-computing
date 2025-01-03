@@ -1,4 +1,4 @@
-# Chapter 4: MPI with mpi4py
+# Chapter 4: Message Passing with mpi4py
 
 This chapter demonstrates the basic usage of the Message Passing Interface (MPI) in Python using the mpi4py library. The examples highlight several essential MPI communication methods that allow processes to interact and share data.
 Key Concepts Covered
