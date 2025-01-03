@@ -42,7 +42,6 @@ This repository showcases several projects and exercises that illustrate the cor
   - **Chapter 9**
   - **Chapter 10**
 
-         ```
 ## 🛠️ Key Features and Learning Outcomes
 
 - **Concurrency and Parallelism:**  
