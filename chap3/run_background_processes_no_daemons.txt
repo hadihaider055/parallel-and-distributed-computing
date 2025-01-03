@@ -1,0 +1,17 @@
+Function foo: Each process prints its start message.
+    If the process is named 'background_process', it loops from 0 to 4 and prints those numbers.
+    Otherwise, it loops from 5 to 9 and prints those numbers.
+    After the loop, each process sleeps for 1 second and then prints its exit message.
+
+Processes:
+  background_process:
+        Named 'background_process', executes the first loop (0 to 4).
+    NO_background_process:
+        Named 'NO_background_process', executes the second loop (5 to 9).
+
+Daemon Flag: Both processes have their daemon attribute set to False, meaning the main program will wait for these processes to finish before exiting.
+
+Process Execution:
+
+    Both processes are started with start() and will run concurrently.
+    The processes will print their respective ranges (0-4 and 5-9) and their start and exit messages.

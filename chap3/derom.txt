@@ -1,0 +1,11 @@
+This code demonstrates daemon and non-daemon processes using Python's multiprocessing module.
+
+    Daemon Process (background_process): Runs in the background and terminates immediately when the main program exits.
+
+    Non-Daemon Process (non_background_process): Runs independently and completes its task even after the main program exits.
+
+Execution:
+
+    foo prints messages for each process.
+    background_process starts but stops after time.sleep(2) when the main program ends.
+    non_background_process continues until it finishes, ensuring completion of its loop.

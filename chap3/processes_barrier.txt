@@ -1,0 +1,21 @@
+ Functions:
+        test_with_barrier(synchronizer, serializer):
+            Uses a Barrier to synchronize the two processes (p1 and p2), so they wait until both reach the barrier before proceeding.
+            Uses a Lock (serializer) to ensure mutual exclusion when printing the timestamp.
+        test_without_barrier():
+            Prints the current timestamp without any synchronization, allowing processes to run independently.
+
+Processes:
+        test_with_barrier: Two processes (p1 and p2) are synchronized using the Barrier, meaning they will wait for each other to reach the barrier before printing the timestamp.
+        test_without_barrier: Two independent processes (p3 and p4) print the timestamp without synchronization.
+
+    Synchronization:
+        Barrier(2): Ensures two processes wait for each other before proceeding.
+        Lock(): Used to serialize access to the print statement, ensuring one process prints at a time.
+
+    Execution:
+        Processes are created using Process, then started with start().
+        Since the Barrier is set for two processes, p1 and p2 will be synchronized, while p3 and p4 will run concurrently without any synchronization.
+
+Output:  The processes p1 and p2 will print their timestamps at the same time after synchronizing at the barrier.
+    The processes p3 and p4 will print independently, without waiting for each other.

@@ -1,0 +1,19 @@
+Imports: multiprocessing: Allows creation and management of processes for parallel execution.
+
+    myFunc(i) function:
+        Takes an integer i as an argument.
+        Prints a message indicating which process is calling it (calling myFunc from process n°: i).
+        Loops from 0 to i-1, printing output for each iteration.
+
+    main() function:
+        Loops 6 times (for i values from 0 to 5).
+        For each iteration, a new process is created using multiprocessing.Process.
+        Target Function: myFunc, passing i as the argument.
+        Process Start: process.start() starts the process to run myFunc.
+        Process Wait: process.join() ensures the main program waits for the process to finish before continuing to the next.
+
+    __main__ block:
+        Calls the main() function to execute the process spawning and waiting sequence.
+
+Key Points: Each iteration of the loop creates a new process that runs myFunc with the current value of i.
+    The process for each i is spawned and completed in order using start() and join().

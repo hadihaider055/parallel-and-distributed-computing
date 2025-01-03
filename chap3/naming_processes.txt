@@ -1,0 +1,15 @@
+    Function myFunc: Prints the current process's name.
+        Sleeps for 3 seconds to simulate a task.
+        Exits and prints the process name again.
+
+    Processes:
+        process_with_name:
+            A custom-named process ('myFunc process').
+        process_with_default_name:
+            Uses the default process name (e.g., Process-1).
+
+    Process Lifecycle:
+        Both processes are started using start().
+        join() ensures the main program waits for both processes to finish.
+
+Output: The name of each process will be printed when they start and exit. The processes run concurrently.

@@ -1,0 +1,17 @@
+Function foo:
+    Each process executes foo.
+    Prints numbers based on process name ('background_process' or other).
+    Sleeps for 1 second after the loop.
+
+Process Creation:
+
+    background_process is a daemon process (terminates when the main program finishes).
+    NO_background_process is a non-daemon process (runs until completion).
+
+Execution:  Both processes run concurrently.
+    background_process prints 0-4 and exits.
+    NO_background_process prints 5-9 and completes after the main program.
+
+Daemon Process: background_process terminates as soon as the main program exits.
+
+Non-Daemon Process:NO_background_process continues running until it finishes execution.

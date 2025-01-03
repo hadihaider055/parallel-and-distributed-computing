@@ -1,0 +1,27 @@
+    Purpose of the Code:Demonstrates inter-process communication (IPC) using pipes in Python's multiprocessing module.
+
+    Pipes:multiprocessing.Pipe creates a two-way communication channel between two processes.
+
+    Process 1 - create_items:
+        Generates numbers from 0 to 9.
+        Sends each number to the output pipe using output_pipe.send(item).
+
+    Process 2 - multiply_items:
+        Reads numbers from the input pipe.
+        Squares each number and sends the result to the output pipe.
+
+    Pipe Closing:
+        Properly closes the unused ends of pipes in the main process using pipe_1[0].close() and pipe_2[0].close() to prevent deadlocks.
+
+    Infinite Loop with try-except:
+        Continuously reads from the pipe in the main process until EOFError is raised, signaling that the pipe is closed.
+
+    Parallelism: Two processes (create_items and multiply_items) run in parallel, improving task separation.
+
+    Pipe Communication:
+        Process 1 sends data to pipe_1.
+        Process 2 reads from pipe_1, processes the data, and writes the results to pipe_2.
+
+    Output: The squared values of numbers 0 through 9 are printed in the main process.
+
+    End of Program: Prints "End" when no more data is received (EOFError).

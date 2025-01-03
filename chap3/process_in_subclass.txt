@@ -1,0 +1,11 @@
+    Custom Process Class: MyProcess inherits from multiprocessing.Process.
+        The run method is overridden to print the process name.
+
+    Process Creation and Execution: In the for loop, 10 instances of MyProcess are created.
+        Each process is started with process.start() and then waited on with process.join().
+
+    Process Lifecycle:  start(): Starts the process, executing the run method.
+        join(): Waits for the process to finish before continuing the next iteration.
+
+Output: For each iteration, the message 'called run method in Process-X' will be printed, where X is the process number (e.g., Process-1, Process-2, etc.).
+
